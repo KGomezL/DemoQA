@@ -2,7 +2,7 @@
 # encoding: iso-8859-1
 
 
-Característica: Se describen los escenarios de prueba enfocados en el sub modulo Nested Frames de la seccion Elements  de la pagina https://demoqa.com/
+Característica: Se describen los escenarios de prueba enfocados en el sub modulo Nested Frames de la seccion Alerts  de la pagina https://demoqa.com/
 
 
   Escenario: Yo como usuario deseo validar la existencia y apariencia de un marcos anidados
