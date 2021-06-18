@@ -1,6 +1,7 @@
 #language: es
 # encoding: iso-8859-1
 
+  #Item Buttons
 Característica: Como usuario deseo verificar del módulo
   "Elements" las funcionalidades "Check Box" y "Text Box"
   Escenario: Validar que en la lista Elements aparezca el item Text Box
