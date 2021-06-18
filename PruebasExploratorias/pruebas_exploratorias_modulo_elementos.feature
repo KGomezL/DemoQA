@@ -87,3 +87,7 @@ Característica: Como usuario deseo probar los links de el elemento "Links"
     Dado que como usuario me encuentro en la pagina "Links"
     Cuando selecciono el link "Not Found"
     Entonces Me debería mostrar un mensaje que diga "Link has responded with staus 404 and status text Not Found"
+
+  Escenario:Como usuario de elements deseo verificar la funcionalidad de los botones del item Dynamics properties
+    Dado que como usuario del item Dynamics properties
+    Entonces verifico el cambio de estado automatica de los 3 botones
