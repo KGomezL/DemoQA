@@ -3,6 +3,7 @@
 
 Característica: Como usuario deseo verificar del módulo "Alerts, Frame & Windows" la
   funcionalidad "Browser Windows"
+
   Escenario: Validar que en la lista Alerts, Frame & Windows aparezca el item Browser Windows
     Dado Yo como usuario ingrese al modulo "Alerts, Frame & Windows"
     Cuando Seleccione "Browser Windows"
@@ -53,3 +54,9 @@ Característica: Como usuario deseo verificar la funcionalidad de los botones "H
     Dado que el usuario quiera validar la aparición de un cuadro de aviso
     Cuando seleccione el botón "Haz click en mi" que corresponde a la alerta deseada
     Entonces se mostrará un aviso donde puede ingresar su nombre el cual no se verá reflejado al lado del enunciado si selecciona el botón cancelar.
+
+  Escenario: Como usuario en el modulo Alerts, frame & windows deseo comprobar la funcionalidad
+  de los botones Small modal y Large modal
+    Dado que como usuario del modulo Alerts, frame & windows
+    Cuando selecciono cada boton
+    Entonces verifico los mensajes en los alerts
