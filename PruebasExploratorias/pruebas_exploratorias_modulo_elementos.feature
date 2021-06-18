@@ -1,7 +1,7 @@
 #language: es
 # encoding: iso-8859-1
 
-  #Buttons
+  #Item Buttons
 Característica: Como usuario deseo verificar los botones del elemento buttogit config ..globalns
 
   Escenario: Verificar funcion de boton "click me"
@@ -24,7 +24,7 @@ Característica: Como usuario deseo verificar los botones del elemento buttogit 
     Entonces : me debería mostrar un mensaje "You have done a double click"
 
 
-      #parte 1 links
+      #Items parte Titulo 1 links
 Característica: Como usuario deseo probar los links de el elemento "Links"
 
   Escenario: Comprobar los links de el enunciado "Following links will open new tab"
@@ -40,7 +40,7 @@ Característica: Como usuario deseo probar los links de el elemento "Links"
     Cuando selecciono el link "HomeFQTwx"
     Entonces Me (lleva) direccionaría a la pagina inicial "demoqa.com"
 
-      #parte 2 links
+      #Items parte Titulo 2 links
 
   Escenario: Comprobar los links de el enunciado "Following links will send an api call"
 
