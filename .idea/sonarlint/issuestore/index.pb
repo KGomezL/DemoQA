@@ -9,3 +9,5 @@
 ŠAutomatizaciones/AutomatizacionBaseScreenplay/AutomatizacionGradle/src/main/java/co/com/qvision/certificaion/demoqa/integrations/README.md,8\3\837f0007b4a40ce42489fd5a7c22b7ed716255f3
 »
 ŠAutomatizaciones/AutomatizacionBaseScreenplay/AutomatizacionGradle/src/main/java/co/com/qvision/certificaion/demoqa/interactions/README.md,1\f\1fe6a4ad58116655457dd295795ad232d895007f
+p
+@PruebasExploratorias/pagina_exploratorias_modulo_alertas.feature,d\e\de41b2471b38c88e627e283fda61515d133903bf
