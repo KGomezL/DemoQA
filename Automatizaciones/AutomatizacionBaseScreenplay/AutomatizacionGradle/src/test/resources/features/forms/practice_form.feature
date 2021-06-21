@@ -1,5 +1,5 @@
 #language: es
-  #enconding: iso-8859-1
+#enconding: iso-8859-1
 Característica:  Como usuario del sistema ToolsQA deseo verificar el elemento
   practice form del modulo Forms para confirmar su correco funcionamiento
 
@@ -9,7 +9,7 @@ Característica:  Como usuario del sistema ToolsQA deseo verificar el elemento
 
   Escenario:Como usuario del modulo form deseo confirmar el envio del formulario con los campos vacíos
     Cuando selecciono el boton submit
-    Entonces confirmo si se registra el formulario con campos vacíos
+    Entonces confirmo si se registra el formulario con campos vacios
 
   Escenario:Como usuario del modulo form y el elemento practice form
   deseo confirmar el registro del formulario con todos los campos dilegenciados
