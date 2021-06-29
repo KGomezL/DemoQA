@@ -9,10 +9,26 @@ import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class Hooks {
 
-    @Before(value = "", order = 0)
+    //TextBox
+    @Before(value = "@textBox", order = 0)
     public void abrirNavegador() {
         OnStage.setTheStage(new OnlineCast());
         OnStage.theActorCalled("Mateo");
         theActorInTheSpotlight().attemptsTo(Open.url("https://demoqa.com/"));
     }
+//
+//    //Practice Form
+//    @Before(value = "@practiceForm", order = 0)
+//    public void abrirNavegador() {
+//        OnStage.setTheStage(new OnlineCast());
+//        OnStage.theActorCalled("Armando");
+//        theActorInTheSpotlight().attemptsTo(Open.url("https://demoqa.com/"));
+//    }
+
+//    @Before(value = "@test1", order = 1)
+//    public void abrirNavegadorTextBox() {
+//        OnStage.setTheStage(new OnlineCast());
+//        OnStage.theActorCalled("Armando");
+//        theActorInTheSpotlight().attemptsTo(Open.url("https://demoqa.com/"));
+//    }
 }

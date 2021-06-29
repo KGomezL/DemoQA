@@ -6,6 +6,7 @@ Característica: Como usuario deseo verificar la funcionalidad de los botones Ha
     Cuando seleccione el boton Haz click en mi que corresponde a la alerta deseada
     Entonces se mostrara una ventana con un mensaje de la accion ejecutada y para continuar debera dar click en el boton aceptar
 
+  @tags
   Escenario: Visualizacion de alerta despues de cinco segundos
     Dado que el usuario quiera ver la alerta despues de cinco segundos
     Cuando seleccione el boton Haz click en mi que corresponde a la alerta despues de cinco segundos

@@ -1,9 +1,9 @@
 package co.com.qvision.certificaion.demoqa.tasks.elements.textbox;
 
+import co.com.qvision.certificaion.demoqa.interactions.elements.textbox.ElementsTextBoxInteraction;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
 
-import static co.com.qvision.certificaion.demoqa.interactions.TarjetaPrincipalElementsInteraction.tarjetaPrincipalElementsInteraction;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
 public class SeleccionarTextBoxTask implements Task {
@@ -11,11 +11,11 @@ public class SeleccionarTextBoxTask implements Task {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
-                tarjetaPrincipalElementsInteraction()
+                ElementsTextBoxInteraction.elementsTextBoxInteraction()
         );
     }
 
-    public static SeleccionarTextBoxTask menu() {
+    public static SeleccionarTextBoxTask seleccionarTextBoxTask() {
         return instrumented(SeleccionarTextBoxTask.class);
     }
 }
