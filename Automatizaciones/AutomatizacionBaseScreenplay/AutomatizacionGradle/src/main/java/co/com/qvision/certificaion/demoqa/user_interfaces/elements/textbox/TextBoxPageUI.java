@@ -32,8 +32,8 @@ public class TextBoxPageUI {
             = Target.the("Botón Submit de formulario")
             .locatedBy("//*[@id='submit'][contains(text(), 'Submit')]");
 
-    //Border output
-    public static final Target OUTPUT
-            = Target.the("Salida con resumen de la info diligenciada")
-            .locatedBy("//div[contains(@class, 'mt-4 row') and @id='output']");
+//    //Border output
+//    public static final Target OUTPUT
+//            = Target.the("Salida con resumen de la info diligenciada")
+//            .locatedBy("//div[contains(@class, 'mt-4 row') and @id='output']");
 }
