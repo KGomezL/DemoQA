@@ -1,4 +1,4 @@
-package co.com.qvision.certificaion.demoqa.interactions.elements.uploadydownload;
+package co.com.qvision.certificaion.demoqa.interactions.elements.uploadydown;
 
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
