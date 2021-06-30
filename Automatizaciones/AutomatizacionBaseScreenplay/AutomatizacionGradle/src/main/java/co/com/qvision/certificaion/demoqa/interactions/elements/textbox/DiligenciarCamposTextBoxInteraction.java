@@ -5,7 +5,6 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.actions.Enter;
 
-
 import static co.com.qvision.certificaion.demoqa.user_interfaces.elements.textbox.TextBoxPageUI.*;
 import static net.serenitybdd.screenplay.Tasks.instrumented;
 
