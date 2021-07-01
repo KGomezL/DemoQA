@@ -1,26 +1,47 @@
 package co.com.qvision.certificaion.demoqa.interactions.forms;
 
 
+import co.com.qvision.certificaion.demoqa.models.forms.FormData;
+import net.serenitybdd.core.Serenity;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
 import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.*;
 import org.openqa.selenium.Keys;
 
-
 import static co.com.qvision.certificaion.demoqa.user_interfaces.forms.FormsPage.*;
 
 public class CamposTextoInteraction implements Interaction {
 
+    FormData formData;
+    String genero;
+
+    public void setGenero() {
+        switch (formData.getGenero()) {
+            case ("Male"):
+                genero = "1";
+                break;
+            case ("Female"):
+                genero = "2";
+                break;
+            default:
+                genero = "3";
+                break;
+        }
+    }
 
     @Override
     public <T extends Actor> void performAs(T actor) {
+        formData = actor.recall("datos");
+        formData = Serenity.sessionVariableCalled("datos");
+
+        setGenero();
         actor.attemptsTo(
-                Enter.theValue("Pedro").into(NAME),
-                Enter.theValue("Prueba").into(LAST_NAME),
-                Enter.theValue("pedro@prueba.com").into(EMAIL),
-                Click.on(GENDER),
-                Enter.theValue("3013589633").into(MOBILE),
+                Enter.theValue(formData.getNombre()).into(NAME),
+                Enter.theValue(formData.getApellido()).into(LAST_NAME),
+                Enter.theValue(formData.getCorreo()).into(EMAIL),
+                Click.on(GENDER.of(genero)),
+                Enter.theValue(formData.getTelefono()).into(MOBILE),
                 Scroll.to(MOBILE),
                 /**
                  * Acciones para seleccionar fecha
@@ -49,6 +70,7 @@ public class CamposTextoInteraction implements Interaction {
                 Click.on(CITY),
                 Click.on(SELECT_CITY),
                 Click.on(BOTON_SUBMIT)
+
         );
     }
 

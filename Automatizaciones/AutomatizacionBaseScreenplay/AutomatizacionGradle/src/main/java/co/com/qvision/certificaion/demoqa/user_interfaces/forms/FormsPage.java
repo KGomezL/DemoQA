@@ -17,7 +17,7 @@ public class FormsPage {
 
     public static final Target GENDER
             = Target.the("Radio Button Género")
-            .locatedBy("//label[@class='custom-control-label']");
+            .locatedBy("//*[@for='gender-radio-{0}']");
 
     public static final Target MOBILE
             = Target.the("Campo Móvil")
@@ -66,4 +66,10 @@ public class FormsPage {
     public static final Target VER_DILIGENCIADOS
             = Target.the("Tabla para ver campos diligenciados")
             .locatedBy(" //div[contains(@class, 'modal-content')] ");
+
+    public static final Target CAMPO_TABLA
+            = Target.the("Campo tabla en posiciones {0} {1}")
+            .locatedBy("//table/tbody/tr[{0}]/td[{1}]");
+
+    // //div[contains(@class, 'modal-content')]
 }

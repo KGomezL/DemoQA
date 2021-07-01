@@ -8,7 +8,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(features = "src/test/resources/features/elements/text_box.feature",
         glue = "co.com.qvision.certificacion.demoqa.stepdefinitions",
         snippets = CucumberOptions.SnippetType.CAMELCASE,
-        tags = "@radioButtons"
+        tags = "@textBox"
 )
 public class TextBoxRunner {
 }

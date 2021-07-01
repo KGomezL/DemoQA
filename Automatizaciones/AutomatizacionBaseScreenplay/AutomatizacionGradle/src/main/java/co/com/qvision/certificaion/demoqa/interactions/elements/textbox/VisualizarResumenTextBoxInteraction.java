@@ -14,6 +14,7 @@ public class VisualizarResumenTextBoxInteraction implements Interaction {
         actor.attemptsTo(
                 Scroll.to(CAMPO_FULL_NAME),
                 Click.on(BOTON_SUBMIT)
+
         );
     }
 

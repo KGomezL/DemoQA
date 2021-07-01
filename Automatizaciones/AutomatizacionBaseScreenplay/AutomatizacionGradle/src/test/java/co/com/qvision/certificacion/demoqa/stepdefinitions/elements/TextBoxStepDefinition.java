@@ -1,11 +1,16 @@
 package co.com.qvision.certificacion.demoqa.stepdefinitions.elements;
 
+import co.com.qvision.certificaion.demoqa.models.textbox.FormEmailTextBoxModel;
+import co.com.qvision.certificaion.demoqa.questions.textbox.ValidarMensajeEmailQuestion;
 import co.com.qvision.certificaion.demoqa.tasks.elements.TarjetaPrincipalElementsTask;
 import co.com.qvision.certificaion.demoqa.tasks.elements.textbox.*;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
+import net.serenitybdd.screenplay.GivenWhenThen;
+import net.serenitybdd.screenplay.actors.OnStage;
 
+import static com.shazam.shazamcrest.matcher.Matchers.sameBeanAs;
 import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
 
 public class TextBoxStepDefinition {
@@ -75,9 +80,14 @@ public class TextBoxStepDefinition {
 
     @Entonces("Se visualizara el resumen del E mail")
     public void seVisualizaraElResumenDelEMail() {
-        theActorInTheSpotlight().attemptsTo(
-                VisualizarResumenTextBoxTask.visualizarResumenTextBoxTask()
-        );
+//        theActorInTheSpotlight().attemptsTo(
+//                VisualizarResumenTextBoxTask.visualizarResumenTextBoxTask()
+//        );
+        FormEmailTextBoxModel formEmailTextBoxModel = new FormEmailTextBoxModel("armando@casas.com");
+        OnStage.theActorInTheSpotlight()
+                .should(GivenWhenThen.seeThat("La validación de mi prueba",
+                        ValidarMensajeEmailQuestion.validarMensajeEmailQuestion(),
+                        sameBeanAs(formEmailTextBoxModel)));
     }
 
     @Cuando("Envio el formulario sin diligenciar")
