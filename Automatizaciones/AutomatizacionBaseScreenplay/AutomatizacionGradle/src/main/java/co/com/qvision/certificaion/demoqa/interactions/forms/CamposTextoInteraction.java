@@ -15,7 +15,6 @@ public class CamposTextoInteraction implements Interaction {
 
     FormData formData;
     String genero;
-//    String state;
 
     public void setGenero() {
         switch (formData.getGenero()) {
@@ -31,30 +30,12 @@ public class CamposTextoInteraction implements Interaction {
         }
     }
 
-//    public void setState() {
-//        switch (formData.getCity()) {
-//            case ("NCR"):
-//                state = "1";
-//                break;
-//            case ("Uttar Pradesh"):
-//                state = "2";
-//                break;
-//            case ("Haryana"):
-//                state = "3";
-//                break;
-//            default:
-//                state = "4";
-//                break;
-//        }
-//    }
-
     @Override
     public <T extends Actor> void performAs(T actor) {
         formData = actor.recall("datos");
         formData = Serenity.sessionVariableCalled("datos");
 
         setGenero();
-//        setState();
         actor.attemptsTo(
                 Enter.theValue(formData.getNombre()).into(NAME),
                 Enter.theValue(formData.getApellido()).into(LAST_NAME),
