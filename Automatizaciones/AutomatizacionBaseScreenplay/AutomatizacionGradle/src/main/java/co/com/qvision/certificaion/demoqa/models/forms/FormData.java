@@ -6,13 +6,23 @@ public class FormData {
     String genero;
     String correo;
     String telefono;
+    String fecha;
+    String subjects;
+    String currentAdd;
+    String state;
+    String city;
 
-    public FormData(String nombre, String apellido, String genero, String correo, String telefono) {
+    public FormData(String nombre, String apellido, String genero, String correo, String telefono, String fecha, String subjects, String currentAdd, String state, String city) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.genero = genero;
         this.correo = correo;
         this.telefono = telefono;
+        this.fecha = fecha;
+        this.subjects = subjects;
+        this.currentAdd = currentAdd;
+        this.state = state;
+        this.city = city;
     }
 
     public String getNombre() {
@@ -53,6 +63,46 @@ public class FormData {
 
     public void setTelefono(String telefono) {
         this.telefono = telefono;
+    }
+
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
+    public String getSubjects() {
+        return subjects;
+    }
+
+    public void setSubjects(String subjects) {
+        this.subjects = subjects;
+    }
+
+    public String getCurrentAdd() {
+        return currentAdd;
+    }
+
+    public void setCurrentAdd(String currentAdd) {
+        this.currentAdd = currentAdd;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
     }
 }
 

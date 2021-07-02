@@ -9,14 +9,14 @@ Característica:  Como usuario del sistema ToolsQA deseo verificar el elemento
       | La Tarjeta   | Seleccionado   |
       | <La Tarjeta> | <Seleccionado> |
     Cuando lleno el formulario
-    |Nombre|Apellido |Email|Genero|Telefono|
-    |<Nombre>|<Apellido>|<Email>|<Genero>|<Telefono>|
+      | Nombre   | Apellido   | Email   | Genero   | Telefono   | Fecha   | Subjects   | CurrentAdd   | State   | City   |
+      | <Nombre> | <Apellido> | <Email> | <Genero> | <Telefono> | <Fecha> | <Subjects> | <CurrentAdd> | <State> | <City> |
 
     Entonces Confirmo si se registra el formulario
 
     Ejemplos:
-      | La Tarjeta | Seleccionado  |Nombre|Apellido |Email|Genero|Telefono|
-      | Forms      | Practice Form |Pedro|Prueba |pedro@prueba.com|Male|3013589633|
-      | Forms      | Practice Form |Pedro|Prueba |pedro@prueba1.com|Female|3013589633|
-      | Forms      | Practice Form |Pedro|Prueba3 |pedro@prueba.com|Male|3013589633|
+      | La Tarjeta | Seleccionado  | Nombre | Apellido | Email              | Genero | Telefono   | Fecha            | Subjects  | CurrentAdd | State | City  |
+      | Forms      | Practice Form | Pedro  | Prueba   | pedro@prueba.com   | Male   | 3013589633 | 01 December,2021 | Maths     | Calle 7    | NCR   | Delhi |
+      | Forms      | Practice Form | Pedro  | Prueba   | segunda@prueba.com | Female | 3013589633 | 02 July,2021     | Chemistry | Calle 7    | NCR   | Delhi |
+
 

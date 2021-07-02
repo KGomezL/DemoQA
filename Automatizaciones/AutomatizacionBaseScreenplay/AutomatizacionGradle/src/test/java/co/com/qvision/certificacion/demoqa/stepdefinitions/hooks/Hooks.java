@@ -42,7 +42,12 @@ public class Hooks {
                 datos.get("Apellido"),
                 datos.get("Genero"),
                 datos.get("Email"),
-                datos.get("Telefono")
+                datos.get("Telefono"),
+                datos.get("Fecha"),
+                datos.get("Subjects"),
+                datos.get("CurrentAdd"),
+                datos.get("State"),
+                datos.get("City")
         );
     }
 

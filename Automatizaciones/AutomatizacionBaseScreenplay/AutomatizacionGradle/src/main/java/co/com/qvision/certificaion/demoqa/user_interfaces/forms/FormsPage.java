@@ -45,7 +45,7 @@ public class FormsPage {
 
     public static final Target SELECT_STATE
             = Target.the("Seleccionar Estado").
-            locatedBy("//*[@id='react-select-3-option-2']");
+            locatedBy("//*[@id='react-select-3-option-0']");
 
     public static final Target CITY
             = Target.the("Lista Desplegable de ciudades")
@@ -53,7 +53,7 @@ public class FormsPage {
 
     public static final Target SELECT_CITY
             = Target.the("Seleccionar Ciudad").
-            locatedBy("//*[@id='react-select-4-option-1']");
+            locatedBy("//*[@id='react-select-4-option-0']");
 
     public static final Target CURRENT_ADD
             = Target.the("Campo para la dirección actual")

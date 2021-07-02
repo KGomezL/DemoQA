@@ -25,6 +25,24 @@ public class ValidarRegistroQuestion implements Question<FormData> {
         return Text.of(CAMPO_TABLA.of("4","2")).viewedBy(actor).asString();
     }
 
+    public String textoFecha(Actor actor){
+        return Text.of(CAMPO_TABLA.of("5","2")).viewedBy(actor).asString();
+    }
+
+    public String textoSubjects(Actor actor){
+        return Text.of(CAMPO_TABLA.of("6","2")).viewedBy(actor).asString();
+    }
+
+    public String textoCurrentAdd(Actor actor){
+        return Text.of(CAMPO_TABLA.of("9","2")).viewedBy(actor).asString();
+    }
+
+    public String textoState(Actor actor, int pos){
+        return Text.of(CAMPO_TABLA.of("10","2")).viewedBy(actor).asString().split(" ")[pos];
+    }
+
+
+////table/tbody/tr[6]/td[2]
     @Override
     public FormData answeredBy(Actor actor) {
         return new FormData(
@@ -32,7 +50,12 @@ public class ValidarRegistroQuestion implements Question<FormData> {
                 textoNombre(actor,1),
                 textoGenero(actor),
                 textoCorreo(actor),
-                textoTelefono(actor)
+                textoTelefono(actor),
+                textoFecha(actor),
+                textoSubjects(actor),
+                textoCurrentAdd(actor),
+                textoState(actor, 0),
+                textoState(actor, 1)
         );
     }
 
