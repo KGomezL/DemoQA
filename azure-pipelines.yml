@@ -7,8 +7,9 @@ trigger:
 - main
 
 pool:
+  pool: QPool
   vmImage: windows-latest
-
+  
 steps:
 - task: Gradle@2
   inputs:
