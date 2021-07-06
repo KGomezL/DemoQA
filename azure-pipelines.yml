@@ -15,7 +15,7 @@ steps:
 - task: Gradle@2
   inputs:
     workingDirectory: '$(system.defaultWorkingDirectory)/Automatizaciones/AutomatizacionBaseScreenplay/AutomatizacionGradle'
-    gradleWrapperFile: 'gradlew'
+    gradleWrapperFile: '$(system.defaultWorkingDirectory)/Automatizaciones/AutomatizacionBaseScreenplay/AutomatizacionGradle/gradlew'
     gradleOptions: '-Xmx3072m'
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.8'
