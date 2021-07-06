@@ -6,8 +6,7 @@
 trigger:
 - main
 
-pool:
-  pool: QPool
+pool: QPool
   vmImage: windows-latest
   
 steps:
