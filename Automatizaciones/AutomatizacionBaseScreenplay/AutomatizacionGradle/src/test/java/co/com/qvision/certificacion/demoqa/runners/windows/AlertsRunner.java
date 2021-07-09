@@ -7,8 +7,8 @@ import org.junit.runner.RunWith;
 @RunWith(CucumberWithSerenity.class)
 @CucumberOptions(features = "src/test/resources/features/windows/alerts.feature",
         glue = "co.com.qvision.certificacion.demoqa.stepdefinitions",
-        snippets = CucumberOptions.SnippetType.CAMELCASE
-        //tags = "@tags"
+        snippets = CucumberOptions.SnippetType.CAMELCASE,
+        tags = "@alerts"
 )
 public class AlertsRunner {
 }

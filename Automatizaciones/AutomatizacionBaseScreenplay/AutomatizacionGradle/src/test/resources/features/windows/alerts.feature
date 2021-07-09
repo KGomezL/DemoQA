@@ -1,38 +1,69 @@
 #language: es
 
 Característica: Como usuario deseo verificar la funcionalidad de los botones Haz clic en mi de acuerdo a su referencia
-  Escenario: Visualizacion de alerta
+
+  @alerts
+  Esquema del escenario: Visualizacion de alerta
     Dado que el usuario quiera ver la alerta
+      | La Tarjeta   | Seleccionado   |
+      | <La Tarjeta> | <Seleccionado> |
     Cuando seleccione el boton Haz click en mi que corresponde a la alerta deseada
+      | Boton   |
+      | <Boton> |
     Entonces se mostrara una ventana con un mensaje de la accion ejecutada y para continuar debera dar click en el boton aceptar
+    Ejemplos:
+      | La Tarjeta              | Seleccionado | Boton            |
+      | Alerts, Frame & Windows | Alerts       | alertButton      |
+      | Alerts, Frame & Windows | Alerts       | timerAlertButton |
 
-  @tags
-  Escenario: Visualizacion de alerta despues de cinco segundos
-    Dado que el usuario quiera ver la alerta despues de cinco segundos
-    Cuando seleccione el boton Haz click en mi que corresponde a la alerta despues de cinco segundos
-    Entonces se mostrara una ventana despues de cinco segundos con un mensaje de la accion ejecutada y para continuar debera dar click en el boton aceptar
-
-  Escenario: Confirmacion de alerta al aceptar
+  @alerts
+  Esquema del escenario: Confirmacion de alerta al aceptar
     Dado que el usuario quiera ver la confirmacion al seleccionar el boton
+      | La Tarjeta   | Seleccionado   |
+      | <La Tarjeta> | <Seleccionado> |
     Cuando seleccione el boton Haz click en mi que corresponde a la alerta deseada
-    Entonces se mostrara un cuadro donde debe seleccionar aceptar para confirmar la accion y que esta se vea al lado del enunciado del boton
+      | Boton   |
+      | <Boton> |
+    Entonces se mostrara un cuadro donde debe seleccionar aceptar para continuar y la eleccion la vera al lado del enunciado del boton
+    Ejemplos:
+      | La Tarjeta              | Seleccionado | Boton         |
+      | Alerts, Frame & Windows | Alerts       | confirmButton |
 
-  Escenario: Confirmacion de alerta al cancelar
+  @alerts
+  Esquema del escenario: Confirmacion de alerta al cancelar
     Dado que el usuario quiera ver la confirmacion al seleccionar el boton
+      | La Tarjeta   | Seleccionado   |
+      | <La Tarjeta> | <Seleccionado> |
     Cuando seleccione el boton Haz click en mi que corresponde a la alerta deseada
-    Entonces se mostrara un cuadro donde debe seleccionar cancelar para ver esta eleccion al lado del enunciado del boton
+      | Boton   |
+      | <Boton> |
+    Entonces se mostrara un cuadro donde debe seleccionar cancelar para continuar y la eleccion la vera al lado del enunciado del boton
+    Ejemplos:
+      | La Tarjeta              | Seleccionado | Boton         |
+      | Alerts, Frame & Windows | Alerts       | confirmButton |
 
-  Escenario: Confirmacion de aviso al aceptar
+  @alerts
+  Esquema del escenario: Confirmacion de aviso al aceptar
     Dado que el usuario quiera validar la aparicion de un cuadro de aviso
+      | La Tarjeta   | Seleccionado   |
+      | <La Tarjeta> | <Seleccionado> |
     Cuando seleccione el boton Haz click en mi que corresponde a la alerta deseada
-    Entonces se mostrara un aviso donde puede ingresar su nombre el cual se vera reflejado al lado del enunciado si selecciona el boton aceptar
+      | Boton   |
+      | <Boton> |
+    Entonces podra ingresar su nombre el cual se vera reflejado al lado del enunciado si selecciona el boton aceptar
+    Ejemplos:
+      | La Tarjeta              | Seleccionado | Boton       |
+      | Alerts, Frame & Windows | Alerts       | promtButton |
 
-  Escenario: Confirmacion de aviso al cancelar
+  @alerts
+  Esquema del escenario: Confirmacion de aviso al cancelar
     Dado que el usuario quiera validar la aparicion de un cuadro de aviso
+      | La Tarjeta   | Seleccionado   |
+      | <La Tarjeta> | <Seleccionado> |
     Cuando seleccione el boton Haz click en mi que corresponde a la alerta deseada
-    Entonces se mostrara un aviso donde puede ingresar su nombre el cual no se vera reflejado al lado del enunciado si selecciona el boton cancelar
-
-  Escenario: Como usuario en el modulo Alerts frame & windows deseo comprobar la funcionalidad de los botones Small modal y Large modal
-    Dado que como usuario del modulo Alerts frame & windows
-    Cuando selecciono cada boton
-    Entonces verifico los mensajes en los alerts
+      | Boton   |
+      | <Boton> |
+    Entonces podra ingresar su nombre pero no se vera al lado del enunciado si selecciona el boton cancelar
+    Ejemplos:
+      | La Tarjeta              | Seleccionado | Boton       |
+      | Alerts, Frame & Windows | Alerts       | promtButton |
