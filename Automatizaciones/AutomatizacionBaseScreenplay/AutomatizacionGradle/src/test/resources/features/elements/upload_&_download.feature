@@ -7,6 +7,7 @@ Característica:Se describen los escenarios de prueba enfocados en el sub modulo
     Cuando el usuario accede al item de Download
     Entonces valido que al acceder al item Download se de la correcta descarga de un archivo
 
+  @uploadDown
   Escenario: Yo como usuario deseo subir un elemento
     Dado que el usuario ingresa al modulo Upload & Download y ubica el boton Seleccionar un archivo
     Cuando el usuario accede al item Seleccionar un archivo

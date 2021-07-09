@@ -8,7 +8,7 @@ import org.openqa.selenium.By;
 
 import static co.com.qvision.certificaion.demoqa.user_interfaces.MenuPageUI.*;
 
-public class SeleccionarUpDownInteraction implements Interaction {
+public class SeleccionarArchivoInteraction implements Interaction {
     @Override
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
@@ -17,12 +17,10 @@ public class SeleccionarUpDownInteraction implements Interaction {
                 Enter.keyValues("C:\\Users\\GS-0006\\Desktop\\Work\\Repositorio\\DemoQA\\DemoQaSemillero202106\\Automatizaciones\\AutomatizacionBaseScreenplay\\AutomatizacionGradle\\src\\test\\resources\\data\\archivo.txt")
                 .into(By.id("uploadFile"))
         );
-        System.out.println(
-                "test"
-        );
+//        System.out.println("test");
     }
 
-    public static SeleccionarUpDownInteraction seleccionarUploadyDownloadInteraction() {
-        return Tasks.instrumented(SeleccionarUpDownInteraction.class);
+    public static SeleccionarArchivoInteraction seleccionarArchivoInteraction() {
+        return Tasks.instrumented(SeleccionarArchivoInteraction.class);
     }
 }

@@ -1,7 +1,8 @@
 package co.com.qvision.certificacion.demoqa.stepdefinitions.elements;
 
 import co.com.qvision.certificaion.demoqa.tasks.elements.TarjetaPrincipalElementsTask;
-import co.com.qvision.certificaion.demoqa.tasks.elements.uploadydownload.SeleccionarUploadyDownloadTask;
+import co.com.qvision.certificaion.demoqa.tasks.elements.uploadydownload.DownloadArchivoTask;
+import co.com.qvision.certificaion.demoqa.tasks.elements.uploadydownload.SeleccionarArchivoTask;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
@@ -18,7 +19,7 @@ public class UploadYDownloadStepDefinition {
     @Cuando("el usuario accede al item de Download")
     public void elUsuarioAccedeAlItemDeDownload() {
         OnStage.theActorInTheSpotlight().attemptsTo(
-                SeleccionarUploadyDownloadTask.seleccionarUploadyDownloadTask()
+                DownloadArchivoTask.downloadArchivoTask()
         );
     }
 
@@ -29,12 +30,16 @@ public class UploadYDownloadStepDefinition {
 
     @Dado("que el usuario ingresa al modulo Upload & Download y ubica el boton Seleccionar un archivo")
     public void queElUsuarioIngresaAlModuloUploadDownloadYUbicaElBotonSeleccionarUnArchivo() {
-
+        OnStage.theActorInTheSpotlight().attemptsTo(
+                TarjetaPrincipalElementsTask.tarjetaPrincipalElementsTask()
+        );
     }
 
     @Cuando("el usuario accede al item Seleccionar un archivo")
     public void elUsuarioAccedeAlItemSeleccionarUnArchivo() {
-
+        OnStage.theActorInTheSpotlight().attemptsTo(
+                SeleccionarArchivoTask.seleccionarArchivoTask()
+        );
     }
 
     @Entonces("valido que se despliegue una ventana nueva con acceso a los diferentes directorios del equipo que se permita la seleccion de un archivo y se cargue correctamente adicional que me permita ver el nombre del archivo seleccionado y la ruta en la que se encontro")
