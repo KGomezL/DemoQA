@@ -11,7 +11,6 @@ import static co.com.qvision.certificaion.demoqa.user_interfaces.elements.textbo
 public class ValidarMensajeEmailQuestion implements Question<FormEmailTextBoxModel> {
 
     public String textoEmail(Actor actor){
-        //String text = Text.of(OUTPUT_EMAIL).viewedBy(actor).asString();
         return Text.of(OUTPUT_EMAIL).viewedBy(actor).asString().split(":")[1];
 
     }
