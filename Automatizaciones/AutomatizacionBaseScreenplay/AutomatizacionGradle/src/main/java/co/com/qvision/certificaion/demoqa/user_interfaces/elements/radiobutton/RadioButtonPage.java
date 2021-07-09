@@ -18,6 +18,4 @@ public class RadioButtonPage {
     public static final Target RADIO_BUTTON_NO
             = Target.the("Radio Button No")
             .locatedBy("//input[(@type='radio')and @id='noRadio']");
-
-
 }
