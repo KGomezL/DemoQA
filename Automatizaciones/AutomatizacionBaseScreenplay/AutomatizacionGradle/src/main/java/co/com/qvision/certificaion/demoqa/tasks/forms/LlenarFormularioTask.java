@@ -22,7 +22,6 @@ public class LlenarFormularioTask implements Task {
         actor.attemptsTo(
                 CamposTextoInteraction.camposTextoInteraction()
         );
-
     }
 
     public static final LlenarFormularioTask llenarFormularioTask(FormData formData) {

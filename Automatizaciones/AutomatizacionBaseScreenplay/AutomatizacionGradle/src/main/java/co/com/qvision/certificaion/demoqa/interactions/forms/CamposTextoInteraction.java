@@ -70,7 +70,6 @@ public class CamposTextoInteraction implements Interaction {
                 Click.on(CITY),
                 Click.on(SELECT_CITY),
                 Click.on(BOTON_SUBMIT)
-
         );
     }
 
