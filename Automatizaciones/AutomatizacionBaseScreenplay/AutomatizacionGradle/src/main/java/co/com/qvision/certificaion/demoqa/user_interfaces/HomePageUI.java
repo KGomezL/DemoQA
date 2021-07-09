@@ -21,12 +21,4 @@ public class HomePageUI {
     public static final Target TARJETA_ALERTS =
             Target.the("Tarjeta alerts del menú principal")
                     .locatedBy("//h5[contains(text(), 'Alerts')]");
-
-//    public static final Target TARJETA_WIDGETS =
-//            Target.the("Tarjeta widgets del menú principal")
-//                    .locatedBy("//h5[contains(text(), 'Widgets')]");
-//
-//    public static final Target TARJETA_INTERACTIONS =
-//            Target.the("Tarjeta interactions del menú principal")
-//                    .locatedBy("//h5[contains(text(), 'Interactions')]");
 }

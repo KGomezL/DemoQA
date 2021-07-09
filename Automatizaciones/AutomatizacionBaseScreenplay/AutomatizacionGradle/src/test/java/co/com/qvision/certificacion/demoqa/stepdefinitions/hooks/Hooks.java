@@ -51,10 +51,7 @@ public class Hooks {
         );
     }
 
-
-//
-
-    //Radio Buttton
+//    //Radio Buttton
 //    @Before(value = "@radioButton", order = 1)
 //    public void abrirNavegador() {
 //        OnStage.setTheStage(new OnlineCast());
@@ -62,10 +59,31 @@ public class Hooks {
 //        theActorInTheSpotlight().attemptsTo(Open.url("https://demoqa.com/"));
 //    }
 
+//    //Upload y Down
 //    @Before(value = "@uploadDown", order = 1)
 //    public void abrirNavegador() {
 //        OnStage.setTheStage(new OnlineCast());
 //        OnStage.theActorCalled("Armando");
 //        theActorInTheSpotlight().attemptsTo(Open.url("https://demoqa.com/"));
+//    }
+
+
+//    //Alerts
+//    @Before(value = "@alerts", order = 0)
+//    public void abrirNavegador() {
+//        OnStage.setTheStage(new OnlineCast());
+//        OnStage.theActorCalled("Armando");
+//        theActorInTheSpotlight().attemptsTo(Open.url("https://demoqa.com/"));
+//    }
+//
+//    @DataTableType
+//    public OpcionesMenuModel opcionesMenuModel(Map<String, String> datos) {
+//        return new OpcionesMenuModel(datos.get("La Tarjeta"), datos.get("Seleccionado"));
+//    }
+//
+//    @DataTableType
+//    public OpcionBotonModel opcionBotonModel(Map<String, String> boton) {
+//        return new OpcionBotonModel(boton.get("Boton")
+//        );
 //    }
 }

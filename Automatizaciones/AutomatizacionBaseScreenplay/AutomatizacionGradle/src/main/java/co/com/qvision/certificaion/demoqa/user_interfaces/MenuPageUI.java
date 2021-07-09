@@ -17,14 +17,10 @@ public class MenuPageUI {
             Target.the("Item Radio Button del menú izquierdo")
                     .locatedBy("//span[contains(text(), 'Radio Button')]");
 
-    //Item RadioButton
+    //Item Upload and Download
     public static final Target MENU_IZQ_ELEMENT_UPLOAD_DOWNLOAD =
             Target.the("Item Upload and Download del menú izquierdo")
                     .locatedBy("//span[contains(text(), 'Upload and Download')]");
-
-    public static final Target BOTON =
-            Target.the("Item Upload and Download del menú izquierdo")
-                    .locatedBy("//input[(@id='uploadFile') and @type='file']");
 
     /**
      * Módulo Forms y su item
@@ -35,5 +31,12 @@ public class MenuPageUI {
             Target.the("Item Practice Forms del menú izquierdo")
                     .locatedBy("//span[contains(text(),'Practice Form')]");
 
+    /**
+     * Módulo Alerts, Frame & Windows
+     */
 
+    //Item Alerts
+    public static final Target MENU_IZQ_AFW_ALERTS =
+            Target.the("Item Alerts del menú izquierdo")
+                    .locatedBy("//span[contains(text(),'Alerts')]");
 }
