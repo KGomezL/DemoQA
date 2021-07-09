@@ -13,14 +13,12 @@ import net.serenitybdd.screenplay.GivenWhenThen;
 import net.serenitybdd.screenplay.actors.OnStage;
 import org.hamcrest.Matchers;
 
-import static net.serenitybdd.screenplay.actors.OnStage.theActorInTheSpotlight;
-
 
 public class AlertsStepDefinition {
 
     @Dado("que el usuario quiera ver la alerta")
     public void queElUsuarioQuieraVerLaAlerta(OpcionesMenuModel opcionesMenuModel) {
-        theActorInTheSpotlight().attemptsTo(
+        OnStage.theActorInTheSpotlight().attemptsTo(
                 TarjetaPrincipalAFWTask.tarjetaPrincipalAFWTask(),
                 SeleccionarAlertsTask.seleccionarAlertsTask(opcionesMenuModel)
         );
@@ -28,7 +26,7 @@ public class AlertsStepDefinition {
 
     @Cuando("seleccione el boton Haz click en mi que corresponde a la alerta deseada")
     public void seleccioneElBotonHazClickEnMiQueCorrespondeALaAlertaDeseada(OpcionBotonModel opcionBotonModel) {
-        theActorInTheSpotlight().attemptsTo(
+        OnStage.theActorInTheSpotlight().attemptsTo(
                 VerAlertaTask.verAlertaTask(opcionBotonModel)
         );
     }
@@ -47,7 +45,7 @@ public class AlertsStepDefinition {
 
     @Dado("que el usuario quiera ver la confirmacion al seleccionar el boton")
     public void queElUsuarioQuieraVerLaConfirmacionAlSeleccionarElBoton(OpcionesMenuModel opcionesMenuModel) {
-        theActorInTheSpotlight().attemptsTo(
+        OnStage.theActorInTheSpotlight().attemptsTo(
                 TarjetaPrincipalAFWTask.tarjetaPrincipalAFWTask(),
                 SeleccionarAlertsTask.seleccionarAlertsTask(opcionesMenuModel)
         );
@@ -55,7 +53,7 @@ public class AlertsStepDefinition {
 
     @Entonces("se mostrara un cuadro donde debe seleccionar aceptar para continuar y la eleccion la vera al lado del enunciado del boton")
     public void seMostraraUnCuadroDondeDebeSeleccionarAceptarParaContinuarYLaEleccionLaVeraAlLadoDelEnunciadoDelBoton() {
-        theActorInTheSpotlight()
+        OnStage.theActorInTheSpotlight()
                 .should(GivenWhenThen.seeThat("La validación de mi prueba",
                         ValidarAlertConfirmQuestion.validarAlertConfirmQuestion(),
                         Matchers.is("Do you confirm action?"))
@@ -64,7 +62,7 @@ public class AlertsStepDefinition {
 
     @Entonces("se mostrara un cuadro donde debe seleccionar cancelar para continuar y la eleccion la vera al lado del enunciado del boton")
     public void seMostraraUnCuadroDondeDebeSeleccionarCancelarParaContinuarYLaEleccionLaVeraAlLadoDelEnunciadoDelBoton() {
-        theActorInTheSpotlight().should(GivenWhenThen.seeThat("La validación de mi prueba",
+        OnStage.theActorInTheSpotlight().should(GivenWhenThen.seeThat("La validación de mi prueba",
                 ValidarAlertCancelQuestion.validarAlertCancelQuestion(),
                 Matchers.is("Do you confirm action?"))
         );
@@ -72,7 +70,7 @@ public class AlertsStepDefinition {
 
     @Dado("que el usuario quiera validar la aparicion de un cuadro de aviso")
     public void queElUsuarioQuieraValidarLaAparicionDeUnCuadroDeAviso(OpcionesMenuModel opcionesMenuModel) {
-        theActorInTheSpotlight().attemptsTo(
+        OnStage.theActorInTheSpotlight().attemptsTo(
                 TarjetaPrincipalAFWTask.tarjetaPrincipalAFWTask(),
                 SeleccionarAlertsTask.seleccionarAlertsTask(opcionesMenuModel)
         );
@@ -80,7 +78,7 @@ public class AlertsStepDefinition {
 
     @Entonces("podra ingresar su nombre el cual se vera reflejado al lado del enunciado si selecciona el boton aceptar")
     public void podraIngresarSuNombreElCualSeVeraReflejadoAlLadoDelEnunciadoSiSeleccionaElBotonAceptar() {
-        theActorInTheSpotlight()
+        OnStage.theActorInTheSpotlight()
                 .should(GivenWhenThen.seeThat("La validación de mi prueba",
                         ValidarAlertConfirmPromptQuestion.validarAlertConfirmPromptQuestion(),
                         Matchers.is("Please enter your name")
@@ -91,7 +89,7 @@ public class AlertsStepDefinition {
 
     @Entonces("podra ingresar su nombre pero no se vera al lado del enunciado si selecciona el boton cancelar")
     public void podraIngresarSuNombrePeroNoSeVeraAlLadoDelEnunciadoSiSeleccionaElBotonCancelar() {
-        theActorInTheSpotlight()
+       OnStage.theActorInTheSpotlight()
                 .should(GivenWhenThen.seeThat("La validación de mi prueba",
                         ValidarAlertCancelPromptQuestion.validarAlertCancelPromptQuestion(),
                         Matchers.is("Please enter your name")
