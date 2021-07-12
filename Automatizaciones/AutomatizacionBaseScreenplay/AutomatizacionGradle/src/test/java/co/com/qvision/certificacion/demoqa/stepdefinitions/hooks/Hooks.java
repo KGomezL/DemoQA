@@ -31,12 +31,12 @@ public class Hooks {
     }
 
     @DataTableType
-    public OpcionesMenuModel opcionesMenuModel(Map<String,String> datos){
-        return new OpcionesMenuModel(datos.get("La Tarjeta"),datos.get("Seleccionado"));
+    public OpcionesMenuModel opcionesMenuModel(Map<String, String> datos) {
+        return new OpcionesMenuModel(datos.get("La Tarjeta"), datos.get("Seleccionado"));
     }
 
     @DataTableType
-    public FormData datosFormulario(Map<String,String> datos){
+    public FormData datosFormulario(Map<String, String> datos) {
         return new FormData(
                 datos.get("Nombre"),
                 datos.get("Apellido"),
