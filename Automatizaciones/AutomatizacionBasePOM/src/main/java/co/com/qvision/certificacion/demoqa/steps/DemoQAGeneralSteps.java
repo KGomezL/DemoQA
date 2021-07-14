@@ -20,11 +20,6 @@ public class DemoQAGeneralSteps {
         demoQAGeneralInteraction.open();
     }
 
-    @Step("Descripcion #texto ")
-    public void validarTitulo(){
-//        assertThat("los textos no coinciden ", demoQAGeneralInteraction.obtenerTituloSeleccionado(),sameBeanAs());
-    }
-
     public void seleccionarOpcion(OpcionesMenuModel opciones) {
         demoQAGeneralInteraction.seleccionarTarjetaForms(opciones.getOpcion());
         demoQASubmenuPageInteraction.seleccionarOpcionSubMenu(opciones.getSubmenu());
