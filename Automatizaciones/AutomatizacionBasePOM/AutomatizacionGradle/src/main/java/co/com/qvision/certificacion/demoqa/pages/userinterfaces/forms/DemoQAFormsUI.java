@@ -21,14 +21,14 @@ public class DemoQAFormsUI extends PageObject {
     public WebElementFacade telefono;
 
     public WebElement getGenero(String dato) {
-        return getDriver().findElement(By.xpath("//*[@for='gender-radio-"+dato+"']"));
+        return getDriver().findElement(By.xpath("//*[@for='gender-radio-" + dato + "']"));
     }
 
     public WebElement getCampoID(String dato) {
-        return getDriver().findElement(By.xpath("//*[@id='"+dato+"']"));
+        return getDriver().findElement(By.xpath("//*[@id='" + dato + "']"));
     }
 
-    public WebElement getCampoTabla(String dato1 ,String dato2) {
-        return getDriver().findElement(By.xpath(" //table/tbody/tr["+dato1+"]/td["+dato2+"]"));
+    public WebElement getCampoTabla(String dato1, String dato2) {
+        return getDriver().findElement(By.xpath(" //table/tbody/tr[" + dato1 + "]/td[" + dato2 + "]"));
     }
 }

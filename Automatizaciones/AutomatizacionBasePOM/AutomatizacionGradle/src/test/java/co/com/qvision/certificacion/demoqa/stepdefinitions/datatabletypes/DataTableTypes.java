@@ -1,4 +1,4 @@
-package co.com.qvision.certificacion.demoqa.stepdefinitions.DataTableTypes;
+package co.com.qvision.certificacion.demoqa.stepdefinitions.datatabletypes;
 
 import co.com.qvision.certificacion.demoqa.models.OpcionesMenuModel;
 import co.com.qvision.certificacion.demoqa.models.forms.FormData;
