@@ -1,7 +1,9 @@
 package co.com.qvision.certificacion.demoqa.pages.interactions.forms;
 
+
 import co.com.qvision.certificacion.demoqa.models.forms.FormData;
-import co.com.qvision.certificacion.demoqa.pages.user_interfaces.forms.DemoQAFormsUI;
+import co.com.qvision.certificacion.demoqa.pages.userinterfaces.forms.DemoQAFormsUI;
+
 import net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade;
 
 public class DemoQAFormsInteraction extends DemoQAFormsUI {

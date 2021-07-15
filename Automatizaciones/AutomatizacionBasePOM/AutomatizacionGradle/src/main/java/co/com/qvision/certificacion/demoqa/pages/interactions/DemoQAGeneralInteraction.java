@@ -1,7 +1,7 @@
 package co.com.qvision.certificacion.demoqa.pages.interactions;
 
 import co.com.qvision.certificacion.demoqa.models.forms.FormData;
-import co.com.qvision.certificacion.demoqa.pages.user_interfaces.DemoQAGeneralUI;
+import co.com.qvision.certificacion.demoqa.pages.userinterfaces.DemoQAGeneralUI;
 import net.thucydides.core.annotations.DefaultUrl;
 import net.thucydides.core.webdriver.javascript.JavascriptExecutorFacade;
 import org.openqa.selenium.WebElement;
@@ -18,7 +18,7 @@ public class DemoQAGeneralInteraction extends DemoQAGeneralUI {
         getTarjetaForms(opcion).click();
     }
 
-    public FormData ObtenerTituloSeleccionado(){
+    public FormData obtenerTituloSeleccionado(){
         return new FormData();
     }
 }

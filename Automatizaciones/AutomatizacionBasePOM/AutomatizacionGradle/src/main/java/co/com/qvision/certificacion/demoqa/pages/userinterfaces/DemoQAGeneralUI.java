@@ -1,4 +1,4 @@
-package co.com.qvision.certificacion.demoqa.pages.user_interfaces;
+package co.com.qvision.certificacion.demoqa.pages.userinterfaces;
 
 import net.serenitybdd.core.pages.WebElementFacade;
 import net.thucydides.core.pages.PageObject;
