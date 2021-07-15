@@ -1,19 +1,47 @@
-plugins {
-    id 'java'
-}
+defaultTasks 'clean'
 
-group 'org.example'
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'net.serenity-bdd.aggregator'
+
 version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
+    jcenter()
+}
+
+ext{
+    serenityCoreVersion = "2.2.12"
+    serenityCucumberVersion = "2.3.4"
+    slf4JVersion = '1.7.30'
+    jUnitVersion = '4.13'
+}
+
+buildscript {
+    repositories {
+        mavenLocal()
+        jcenter()
+    }
+    dependencies {
+        classpath "net.serenity-bdd:serenity-gradle-plugin:2.4.24"
+        classpath "net.serenity-bdd:serenity-single-page-report:2.1.4"
+    }
+}
+
+serenity {
+    reports = ["single-page-html"]
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-}
-
-test {
-    useJUnitPlatform()
+    implementation "net.serenity-bdd:serenity-core:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-junit:${serenityCoreVersion}"
+    implementation "net.serenity-bdd:serenity-cucumber6:${serenityCucumberVersion}"
+    implementation (group: 'log4j', name: 'log4j', version: '1.2.17')
+    testImplementation "junit:junit:${jUnitVersion}"
+    testImplementation 'org.assertj:assertj-core:3.11.1'
+    testImplementation "org.slf4j:slf4j-simple:${slf4JVersion}"
+    implementation group: 'com.shazam', name: 'shazamcrest', version: '0.11'
+    implementation group: 'net.serenity-bdd', name: 'serenity-rest-assured', version: '2.4.48'
 }
