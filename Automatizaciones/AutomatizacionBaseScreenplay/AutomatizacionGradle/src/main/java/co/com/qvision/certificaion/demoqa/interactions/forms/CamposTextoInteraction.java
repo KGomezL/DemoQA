@@ -1,7 +1,7 @@
 package co.com.qvision.certificaion.demoqa.interactions.forms;
 
 
-import co.com.qvision.certificaion.demoqa.models.forms.FormData;
+import co.com.qvision.certificaion.demoqa.models.forms.FormDataModel;
 import net.serenitybdd.core.Serenity;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Interaction;
@@ -13,7 +13,7 @@ import static co.com.qvision.certificaion.demoqa.user_interfaces.forms.FormsPage
 
 public class CamposTextoInteraction implements Interaction {
 
-    FormData formData;
+    FormDataModel formData;
     String genero;
 
     public void setGenero() {

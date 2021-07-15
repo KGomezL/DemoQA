@@ -1,7 +1,7 @@
 package co.com.qvision.certificaion.demoqa.tasks.forms;
 
 import co.com.qvision.certificaion.demoqa.interactions.forms.CamposTextoInteraction;
-import co.com.qvision.certificaion.demoqa.models.forms.FormData;
+import co.com.qvision.certificaion.demoqa.models.forms.FormDataModel;
 import net.serenitybdd.core.Serenity;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
@@ -9,9 +9,9 @@ import net.serenitybdd.screenplay.Tasks;
 
 public class LlenarFormularioTask implements Task {
 
-    FormData formData;
+    FormDataModel formData;
 
-    public LlenarFormularioTask(FormData formData) {
+    public LlenarFormularioTask(FormDataModel formData) {
         this.formData = formData;
     }
 
@@ -24,7 +24,7 @@ public class LlenarFormularioTask implements Task {
         );
     }
 
-    public static final LlenarFormularioTask llenarFormularioTask(FormData formData) {
+    public static final LlenarFormularioTask llenarFormularioTask(FormDataModel formData) {
         return Tasks.instrumented(LlenarFormularioTask.class, formData);
     }
 }

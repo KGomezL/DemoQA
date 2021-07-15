@@ -2,7 +2,7 @@ package co.com.qvision.certificacion.demoqa.stepdefinitions.forms;
 
 
 import co.com.qvision.certificaion.demoqa.models.OpcionesMenuModel;
-import co.com.qvision.certificaion.demoqa.models.forms.FormData;
+import co.com.qvision.certificaion.demoqa.models.forms.FormDataModel;
 import co.com.qvision.certificaion.demoqa.questions.forms.ValidarRegistroQuestion;
 import co.com.qvision.certificaion.demoqa.tasks.forms.LlenarFormularioTask;
 import co.com.qvision.certificaion.demoqa.tasks.forms.SeleccionarOpcionTask;
@@ -25,7 +25,7 @@ public class PracticeFormStepDefinition {
     }
 
     @Cuando("lleno el formulario")
-    public void llenoElFormulario(FormData formData) {
+    public void llenoElFormulario(FormDataModel formData) {
         OnStage.theActorInTheSpotlight()
                 .attemptsTo(
                         LlenarFormularioTask.llenarFormularioTask(formData)
@@ -34,7 +34,7 @@ public class PracticeFormStepDefinition {
 
     @Entonces("Confirmo si se registra el formulario")
     public void confirmoSiSeRegistraElFormulario() {
-        FormData formData = OnStage.theActorInTheSpotlight()
+        FormDataModel formData = OnStage.theActorInTheSpotlight()
                 .recall("datos");
 
         OnStage.theActorInTheSpotlight()

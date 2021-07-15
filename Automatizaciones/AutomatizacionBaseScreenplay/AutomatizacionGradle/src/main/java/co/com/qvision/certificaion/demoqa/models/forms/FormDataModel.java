@@ -1,6 +1,6 @@
 package co.com.qvision.certificaion.demoqa.models.forms;
 
-public class FormData {
+public class FormDataModel {
     String nombre;
     String apellido;
     String genero;
@@ -12,7 +12,7 @@ public class FormData {
     String state;
     String city;
 
-    public FormData(String nombre, String apellido, String genero, String correo, String telefono, String fecha, String subjects, String currentAdd, String state, String city) {
+    public FormDataModel(String nombre, String apellido, String genero, String correo, String telefono, String fecha, String subjects, String currentAdd, String state, String city) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.genero = genero;

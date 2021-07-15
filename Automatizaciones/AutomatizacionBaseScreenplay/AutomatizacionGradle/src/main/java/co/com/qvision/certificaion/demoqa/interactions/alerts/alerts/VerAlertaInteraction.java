@@ -1,5 +1,6 @@
 package co.com.qvision.certificaion.demoqa.interactions.alerts.alerts;
 
+
 import co.com.qvision.certificaion.demoqa.models.alerts.OpcionBotonModel;
 import net.serenitybdd.core.Serenity;
 import net.serenitybdd.screenplay.Actor;
