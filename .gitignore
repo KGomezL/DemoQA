@@ -31,7 +31,6 @@ src/test/resources/driver/*
 .scannerwork/
 
 # Package Files #
-*.jar
 *.nar
 *.zip
 *.tar.gz
